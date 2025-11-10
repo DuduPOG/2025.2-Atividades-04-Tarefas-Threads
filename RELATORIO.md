@@ -1,6 +1,7 @@
 # Relatório de Observações - Atividade de Threads
 
 ## Informações do Aluno
+
 - **Nome:** _[Seu nome aqui]_
 - **Matrícula:** _[Sua matrícula aqui]_
 - **Data:** _[Data da execução]_
@@ -21,16 +22,19 @@
 ### Resultados Observados
 
 **Thread CPU (Thread 1):**
+
 - Tempo de execução: _______ segundos
 - Soma dos primos: _______
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
 
 **Thread I/O (Thread 2):**
+
 - Tempo de execução: _______ segundos
 - Linhas processadas: _______
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
 
 **Thread Mista (Thread 3):**
+
 - Tempo de execução: _______ segundos
 - Total de cálculos: _______
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
@@ -50,14 +54,17 @@ _[Ex: As mensagens das três threads apareceram intercaladas, mostrando que esta
 ### Resultados Observados
 
 **Thread CPU (Thread 1):**
+
 - Tempo de execução: _______ segundos
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
 
 **Thread I/O (Thread 2):**
+
 - Tempo de execução: _______ segundos
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
 
 **Thread Mista (Thread 3):**
+
 - Tempo de execução: _______ segundos
 - Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
 
@@ -100,6 +107,7 @@ _[Sua resposta aqui - compare execução paralela vs. sequencial]_
 **Alteração realizada:** _[Ex: Mudei NUM_ITERACOES de 1000000 para 5000000]_
 
 **Resultado observado:**
+
 - Tempo da Thread CPU: _______ segundos
 - Impacto no tempo total: _______
 
@@ -110,6 +118,7 @@ _[Sua resposta aqui - compare execução paralela vs. sequencial]_
 **Alteração realizada:** _[Ex: Criei 3 threads CPU adicionais]_
 
 **Resultado observado:**
+
 - Comportamento: _______
 - Impacto na performance: _______
 
