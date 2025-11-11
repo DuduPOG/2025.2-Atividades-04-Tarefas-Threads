@@ -2,18 +2,18 @@
 
 ## Informações do Aluno
 
-- **Nome:** _[Seu nome aqui]_
-- **Matrícula:** _[Sua matrícula aqui]_
-- **Data:** _[Data da execução]_
+- **Nome:** Eduardo Medeiros de Sousa Aguiar
+- **Matrícula:** 20242014040005
+- **Data:** 10/11/2025
 
 ## Ambiente de Execução
 
 - [ ] Executado localmente
 - [X] Executado em Docker/Fedora
 
-**Sistema Operacional:** _[Ex: Ubuntu 22.04, Fedora 40, etc.]_  
-**Processador:** _[Ex: Intel Core i5, AMD Ryzen, etc.]_  
-**Número de Cores:** _[Ex: 4 cores, 8 threads]_
+**Sistema Operacional:** Windows 11 25H2  
+**Processador:** AMD Ryzen 7 5700G  
+**Número de Cores:** 8 cores, 16 threads
 
 ---
 
@@ -45,13 +45,13 @@
 
 Descreva como as mensagens das threads apareceram no console:
 
-_[Ex: As mensagens das três threads apareceram intercaladas, mostrando que estavam executando simultaneamente...]_
+As mensagens foram mescladas, sendo executadas ao mesmo tempo e no final cada uma foi finalizada no seu tempo
 
 ---
 
 ## Execução 2 (Repetir para comparação)
 
-### Resultados Observados
+### Resultados Observados:
 
 **Thread CPU (Thread 1):**
 
