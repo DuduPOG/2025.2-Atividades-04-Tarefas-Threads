@@ -9,7 +9,7 @@
 ## Ambiente de Execução
 
 - [ ] Executado localmente
-- [ ] Executado em Docker/Fedora
+- [X] Executado em Docker/Fedora
 
 **Sistema Operacional:** _[Ex: Ubuntu 22.04, Fedora 40, etc.]_  
 **Processador:** _[Ex: Intel Core i5, AMD Ryzen, etc.]_  
@@ -23,23 +23,23 @@
 
 **Thread CPU (Thread 1):**
 
-- Tempo de execução: _______ segundos
-- Soma dos primos: _______
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0.20 segundos
+- Soma dos primos: 37550402023
+- Ordem de conclusão: 3º (1ª, 2ª ou 3ª)
 
 **Thread I/O (Thread 2):**
 
-- Tempo de execução: _______ segundos
-- Linhas processadas: _______
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0 segundos
+- Linhas processadas: 10000
+- Ordem de conclusão: 1º (1ª, 2ª ou 3ª)
 
 **Thread Mista (Thread 3):**
 
-- Tempo de execução: _______ segundos
-- Total de cálculos: _______
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0.01 segundos
+- Total de cálculos: 3482527859448382464
+- Ordem de conclusão: 2º (1ª, 2ª ou 3ª)
 
-**Tempo Total do Programa:** _______ segundos
+**Tempo Total do Programa:** 0 segundos
 
 ### Observações sobre a Saída
 
@@ -55,24 +55,24 @@ _[Ex: As mensagens das três threads apareceram intercaladas, mostrando que esta
 
 **Thread CPU (Thread 1):**
 
-- Tempo de execução: _______ segundos
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0.20 segundos
+- Ordem de conclusão: 3º (1ª, 2ª ou 3ª)
 
 **Thread I/O (Thread 2):**
 
-- Tempo de execução: _______ segundos
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0.01 segundos
+- Ordem de conclusão: 1º (1ª, 2ª ou 3ª)
 
 **Thread Mista (Thread 3):**
 
-- Tempo de execução: _______ segundos
-- Ordem de conclusão: _______ (1ª, 2ª ou 3ª)
+- Tempo de execução: 0.01 segundos
+- Ordem de conclusão: 2º (1ª, 2ª ou 3ª)
 
-**Tempo Total do Programa:** _______ segundos
+**Tempo Total do Programa:** 0 segundos
 
 ### Diferenças entre Execuções
 
-_[Descreva se houve diferenças nos tempos ou na ordem de conclusão das threads]_
+Dessa vez o tempo de execução da Thread 2 pôde ser computado
 
 ---
 
@@ -80,23 +80,23 @@ _[Descreva se houve diferenças nos tempos ou na ordem de conclusão das threads
 
 ### 1. Qual thread terminou primeiro? Por quê?
 
-_[Sua resposta aqui - considere o tipo de operação: CPU, I/O ou mista]_
+I/O, pela menor demanda de processamento
 
 ### 2. Por que os tempos de execução variam entre diferentes execuções?
 
-_[Sua resposta aqui - pense no escalonamento de threads, carga do sistema, etc.]_
+A carga do sistema pode aumentar por processos em segundo plano executados na máquina ou inconsistências no funcionamento do computador
 
 ### 3. Como o sistema operacional gerencia a execução das threads?
 
-_[Sua resposta aqui - considere conceitos de escalonamento, time-sharing, etc.]_
+No Windows, por prioridade
 
 ### 4. Qual seria o impacto de aumentar o número de threads?
 
-_[Sua resposta aqui - pense em paralelismo vs. overhead]_
+Otimizar os processos com processamento paralelo
 
 ### 5. O que aconteceria se executássemos as mesmas operações sequencialmente?
 
-_[Sua resposta aqui - compare execução paralela vs. sequencial]_
+Poderia levar mais tempo pela demanda de processamento.
 
 ---
 
@@ -104,25 +104,25 @@ _[Sua resposta aqui - compare execução paralela vs. sequencial]_
 
 ### Modificação 1: Aumentar NUM_ITERACOES
 
-**Alteração realizada:** _[Ex: Mudei NUM_ITERACOES de 1000000 para 5000000]_
+**Alteração realizada:** Mudei NUM_ITERACOES de 1000000 para 10000000
 
 **Resultado observado:**
 
-- Tempo da Thread CPU: _______ segundos
-- Impacto no tempo total: _______
+- Tempo da Thread CPU: 4.71 segundos
+- Impacto no tempo total: Grande
 
 **Conclusão:** _[O que você aprendeu com essa modificação?]_
 
 ### Modificação 2: Adicionar mais threads
 
-**Alteração realizada:** _[Ex: Criei 3 threads CPU adicionais]_
+**Alteração realizada:** Criei 3 threads CPU adicionais
 
-**Resultado observado:**
+**Resultado observado:** Aumento no tempo de execução
 
-- Comportamento: _______
-- Impacto na performance: _______
+- Comportamento: A necessidade de processamento intensivo provocou uma perda de desempenho por causa da demanda pelas threads
+- Impacto na performance: Médio
 
-**Conclusão:** _[O que você aprendeu com essa modificação?]_
+**Conclusão:** Em CPU-Bound, poucas threads não são eficientes para otimizar a execução de tarefas significativamente
 
 ---
 
@@ -130,10 +130,9 @@ _[Sua resposta aqui - compare execução paralela vs. sequencial]_
 
 Liste os principais conceitos de sistemas operacionais que você compreendeu melhor com esta atividade:
 
-1. _[Ex: Concorrência e paralelismo]_
-2. _[Ex: Diferença entre operações CPU-bound e I/O-bound]_
-3. _[Ex: Uso da biblioteca pthread]_
-4. _[...]_
+1. Concorrência e paralelismo
+2. Diferença entre operações CPU-bound e I/O-bound
+3. Context Switching
 
 ---
 
@@ -141,7 +140,7 @@ Liste os principais conceitos de sistemas operacionais que você compreendeu mel
 
 Descreva quaisquer problemas que enfrentou durante a atividade e como os resolveu:
 
-_[Sua resposta aqui]_
+Executar o programa no ambiente local, resolvi mudando o do prompt do powershell para o git bash
 
 ---
 
@@ -151,5 +150,6 @@ _[Espaço para observações adicionais, sugestões ou comentários sobre a ativ
 
 ---
 
-**Data de Conclusão:** _[Data]_  
-**Assinatura:** _[Seu nome]_
+**Data de Conclusão:** 10/11/2025
+
+**Assinatura:** Eduardo Medeiros
